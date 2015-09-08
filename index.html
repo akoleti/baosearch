@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Baosearch by akoleti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Baosearch</h1>
+      <h2 class="project-tagline">BAOSearch is a web-based application for querying, browsing and downloading small molecule biological screening results including high-throughput screening (HTS) data.</h2>
+      <a href="https://github.com/akoleti/baosearch" class="btn">View on GitHub</a>
+      <a href="https://github.com/akoleti/baosearch/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/akoleti/baosearch/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="welcome-to-baosearch" class="anchor" href="#welcome-to-baosearch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to BAOSearch.</h3>
+
+<p>BAOSearch is a web-based application for querying, browsing and downloading small molecule biological screening results including high-throughput screening (HTS) data.</p>
+
+<p>BAOSearch content was curated from PubChem by Ph.D. biologists. The current release (BAOContent Q2 2011) includes 944 assays with over 50 million results (screening endpoints) characterizing the NIH MLSMR library and others. All assays and their results have been annotated with standardized terms from the BioAssay Ontology (BAO). BAO categorizes biological assays by several hierarchies that correspond to the assay format, design, detection technology, target, and the result endpoints, which are relevant to interpret and analyze HTS data. BAO is analysis-centric with the purpose to facilitate conclusions about the molecular mechanisms of action of small molecules based on a large number of result sets. To learn more about the BAO project, visit the BioAssay Ontology Website.</p>
+
+<p>Leveraging the ontology, BAOSearch incorporates semantic search capabilities to identify relevant assays. It is a research and demonstration project and is under active development.</p>
+
+<h3>
+<a id="technology" class="anchor" href="#technology" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technology</h3>
+
+<p>BAOSearch is a multi-tier, web-based, AJAX-enabled, application written primarily in Java and built following a ReSTful web services paradigm. The service-based aspect of the architecture allows the UI to be separated from the storage and manipulation of the data, and provides well defined interfaces for UI components to use to access and manipulate application data. This separation of concerns creates the potential of developing multiple UIs that access the same service, but which render the data differently, or run on different platforms (e.g., browsers, mobile apps). This architecture also creates an opportunity for other software applications (not only User Interfaces) to access the system to query and retrieve data. The application middle-tier was written in Java using Jena1 for accessing and manipulating semantic data, and also using components from the open source VIVO2 project. The browser-based UI was built using JSP and Javascript, with components from several Javascript libraries including jQuery3. The chemical search component is powered by Chemaxon4. All data is stored in MySQL. SDB5 is used for the triple-store and other data required by the application is stored in a relational schema and accessed using Hibernate6. BAOSearch is still undergoing active development with new features being added and possible changes being made to the underlying architecture and enabling technologies. This code is now available for download.
+[1] Jena 
+[2] VIVO 
+[3] jQuery 
+[4] Chemaxon 
+[5] SDB 
+[6] Hibernate</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>Cite: Mader C, Datar N, Abeyruwan S, Koleti A, Venkatapuram S, Chung C, Puram D, Gayanilo F, Vempati U, Sakurai K, Przydzial M, Lemmon V, Visser U, Schürer S. BAOSearch: <a href="http://baosearch.ccs.miami.edu">http://baosearch.ccs.miami.edu</a></p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>We are very interested in your feedback (positive or critical). Please explore BAOSearch and let us know what you think - send us a smile or report a bug by using the links available at the bottom of every page.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/akoleti/baosearch">Baosearch</a> is maintained by <a href="https://github.com/akoleti">akoleti</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
